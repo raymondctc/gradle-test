@@ -1,0 +1,45 @@
+ext.versions = [
+        // android
+        androidBuildToolsVersion: "26.0.2",
+        androidCompileSdkVersion: 26,
+        androidTargetSdkVersion: 26,
+        androidMinSdkVersion: 16,
+
+        supportLibVersion: "26.1.0",
+        architectureVersion: '1.0.0-beta1',
+
+        // okhttp
+        okhttpVersion: '3.9.0',
+
+        dexterVersion: "4.1.1",
+        autoValueVersion: '1.5',
+
+        // rxjava
+        rxjava2Version: '2.0.1',
+        rxbinding2Version: '2.0.0',
+        rxbinding2AppCompatVersion: '2.0.0',
+        rxrelay2Version: '2.0.0',
+
+        // gson
+        gsonVersion: "2.7"
+]
+
+ext.libraries = [
+        // okhttp
+        okhttp3: "com.squareup.okhttp3:okhttp:${versions.okhttpVersion}",
+        okhttp3Logging: "com.squareup.okhttp3:logging-interceptor:${versions.okhttpVersion}",
+
+        // gson
+        gson: "com.google.code.gson:gson:${versions.gsonVersion}",
+
+        // rxjava
+        rxJava2: "io.reactivex.rxjava2:rxandroid:${versions.rxjava2Version}",
+        rxbinding2: "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:${versions.rxjavaBindingVersion}",
+        rxbinding2AppCompat: "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:${versions.rxbinding2AppCompatVersion}",
+        rxrelay2: "com.jakewharton.rxrelay2:rxrelay:${versions.rxrelay2Version}",
+
+        //Google Support lib
+        appCompatV7: "com.android.support:appcompat-v7:${versions.supportLibVersion}",
+        recyclerView: "com.android.support:recyclerview-v7:${versions.supportLibVersion}",
+        designSupport: "com.android.support:design:${versions.supportLibVersion}"
+]
